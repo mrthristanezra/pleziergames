@@ -27,6 +27,33 @@
 		body{
 		background-color: rgba(0, 0, 0, 0.5);
 		}
+		.sidebar{
+		background-color: white;
+		border-radius: 20px;
+		height: 35px;
+		}
+		.clickbutton{
+		height: 30px;
+		border-radius: 16px;
+		background-color: blue;
+		border: none;
+		color: white;
+		font-family: 'Trebuchet MS', sans-serif;
+		}
+		@keyframes rainbow{
+		20%  {color: red;}
+		40%  {color: yellow;}
+		60%  {color: green;}
+		80%  {color: blue;}
+		100%  {color: magenta;}
+		}
+		.rainbow-text{
+		text-align: center;
+		animation-name: rainbow;
+		animation-duration: 8s;
+		animation-iteration-count: infinite;
+		
+		}
     </Style>
 	<Script>console.log("Hey there! I'm Mr. Thristan Ezra, welcome to my website!");</Script>
 	<Link rel="icon" type="image/x-icon" href="pleziergamesicon.png">
@@ -36,21 +63,46 @@
 <Body image background="background.png">
 <h1><Font face=tahoma><Marquee>Welcome to PlezierGames!</Marquee></Font></h1>
 <Font face=sans-serif size="5"><Center>by Mr. Thristan Ezra</Font>
-<Font face=verdana size="5"><Table>
-<h3><Th>Index/Home</Th>
-<Th><A Href="games.html">Games</A></Th>
-<Th><A Href="socials.html">Social</A></Th></h3>
-</Table>
+<P><Font size="5"><Table class="sidebar">
+<Th><A Href="index.html"><Button class="clickbutton">Index/Home</Button></A></Th>
+<Th><A Href="games.html"><Button class="clickbutton">Games</Button></Th>
+<Th><A Href="socials.html"><Button class="clickbutton">Social</Button></A></Th>
+</Table></Font></P>
+
+<Font face=verdana size="5">
 <h2 class="text1">What's going on here?</h2>
 </Font>
 
 
-<Table width=70%>
+
+
+
+<P><Table width=70%>
 <Tr><Th bgcolor="grey">
-<h4 align=center><Font face=verdana>Introduction: First Launch</Font></h4>
+<h4 align=center><Font face=verdana><span class='rainbow-text'>New Game Coming soon! (Updated 12th March, 2025)</Span></Font></h4>
+</Th></Tr><Tr><Td>
+<Font face=verdana>Hello! We want to let you know that our new game will be published soon in 21 March 2025. Stay tuned! :)
+<Br><Br>Additional Updates:
+<ul type="square">
+<li>Refreshed CSS Models for sidebars</li>
+<li>Fixed Bugs</li>
+</ul>
+</Font></Td></Tr>
+</Table></P>
+
+
+
+
+
+
+
+
+<P><Table width=70%>
+<Tr><Th bgcolor="grey">
+<h4 align=center><Font face=verdana>Introduction: First Launch (Site Opened 5th March, 2025)</Font></h4>
 </Th></Tr><Tr><Td>
 <Font face=verdana>Welcome to the PlezierGames! Thank you for visiting, enjoy!</Font></Td></Tr>
-</Table>
+</Table></P>
 
 
 <Br><Br><Br><Br><Br><Br><Br><Br>
