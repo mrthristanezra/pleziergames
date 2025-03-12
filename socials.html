@@ -21,6 +21,30 @@
 		Body{
 		background-size:100% auto;
 		}
+		.side-top{
+		background-color: white;
+		border-radius: 20px;
+		height: 35px;
+		}
+		.clickbutton{
+		height: 30px;
+		border-radius: 16px;
+		background-color: blue;
+		border: none;
+		color: white;
+		font-family: 'Trebuchet MS', sans-serif;
+		}
+		.socialmedia{
+		margin: auto;
+		width: 250px;
+		height: 70px;
+		}
+		.urldirectbutton{
+		width: 150px;
+		height: 30px;
+		font-size: 16px;
+		Background-color: white;
+		}
     </Style>
 	<Script>console.log("Hey there! I'm Mr. Thristan Ezra, welcome to my website!");</Script>
 	<Link rel="icon" type="image/x-icon" href="pleziergamesicon.png">
@@ -30,28 +54,26 @@
 <Body image background="background.png">
 <h1><Font face="tahoma"><Marquee>Welcome to PlezierGames!</Marquee></Font></h1>
 <Font face=sans-serif size="5"><Center>by Mr. Thristan Ezra</Font>
-<Font face=verdana size="5"><Table align=center>
-<h3><Th><A Href="index.html">Index/Home</A></Th>
-<Th><A Href="games.html">Games</A></Th>
-<Th>Social</Th></h3></Table></Font><Font size=3 face=tahoma>
-<Br><Br><Br>
+<P><Font size="5"><Table class="side-top">
+<Th><A Href="index.html"><Button class="clickbutton">Index/Home</Button></A></Th>
+<Th><A Href="games.html"><Button class="clickbutton">Games</Button></Th>
+<Th><A Href="socials.html"><Button class="clickbutton">Social</Button></A></Th>
+</Table></Font></P><Br><Br><Br>
 
-<Table align=center width=250px; height=70px>
-<Tr><Td align=center><A href="https://tumblr.com/mrthristanezra">Tumblr</A></Td>
-<Td align=center><Img src="tumblr_icon.png"></img></Td>
-<Td align=center>mrthristanezra
+
+<Font size=3 face=tahoma>
+<Table class="socialmedia">
+<Tr><Td align=center><Font color='#001f48'>Tumblr</Font></Td>
+<Td align=center width=35px><Img src="tumblr_icon.png" width=30px; height=30px></img></Td>
+<Td align=center><A href="https://tumblr.com/mrthristanezra"><Button class="urldirectbutton">mrthristanezra</Button></A>
 </Td></Tr>
-<Tr><Td align=center><A href="https://www.twitch.tv/MrThristanEzra">Twitch</A></Td>
-<Td align=center><Img src="twitch_icon.png"></img></Td>
-<Td align=center>MrThristanEzra
+<Tr><Td align=center><Font color='#cb6ce6'>Twitch</Font></Td>
+<Td align=center width=35px><Img src="twitch_icon.png" width=30px; height=30px></img></Td>
+<Td align=center><A href="https://www.twitch.tv/MrThristanEzra"><Button class="urldirectbutton">MrThristanEzra</Button></A>
 </Td></Tr>
-<Tr><Td align=center>Discord</Td>
-<Td align=center><Img src="discord_icon.png"></img></Td>
-<Td align=center>mr.thristan.ezra
-</Td></Tr>
-<Tr><Td align=center><A Href="https://x.com/mrthristanezra_">X/Twitter</A></Td>
-<Td align=center><Img src="x_icon.png"></img></Td>
-<Td align=center>@mrthristanezra_
+<Tr><Td align=center>X/Twitter</Td>
+<Td align=center width=35px><Img src="twitter_icon.png" width=30px; height=30px></Td>
+<Td align=center><A Href="https://x.com/mrthristanezra_"><Button class="urldirectbutton">@mrthristanezra_</Button></A>
 </Td></Tr>
 </Table></Font>
 <Br><Br><Br><Br><Br><Br><Br><Br>
