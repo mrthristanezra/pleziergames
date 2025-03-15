@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: grey;
+	color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    margin: 20px 0;
+}
+
+#map {
+    width: 98%;
+    height: 580px;
+    margin: 20px auto;
+}
