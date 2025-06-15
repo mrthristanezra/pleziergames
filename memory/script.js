@@ -1,4 +1,4 @@
-const emojiSet = ["🔠", "🌲", "㊙️", "💦", "🔣", "💞", "🪨", "💯", "🍃", "🌵", "☮️", "🈵", "💍", "🔆", "💻", "🎧", "🍨", "🌱"];
+const emojiSet = ["🔠", "🛟", "🚦", "🫟", "🔣", "🚸", "✈️", "🏔️", "🌉", "🌵", "Ⓜ️", "🚏", "📶", "🔆", "💻", "⚓", "🛣️", "💺"];
 
 let gameBoard = document.getElementById("game-board");
 let gridSize = 4;
@@ -31,7 +31,7 @@ function generateBoard() {
 
         let back = document.createElement("div");
         back.classList.add("back");
-        back.innerText = "❓";
+        back.innerText = "<b>?</b>";
 
         card.appendChild(front);
         card.appendChild(back);
