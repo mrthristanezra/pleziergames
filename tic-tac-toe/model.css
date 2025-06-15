@@ -16,6 +16,10 @@ h1 {
   color: #333;
 }
 
+.text {
+	font-family: "Roboto Slab", serif;
+}
+
 .board {
   display: grid;
   grid-template-columns: repeat(3, 100px);
