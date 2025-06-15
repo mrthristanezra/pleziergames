@@ -31,7 +31,7 @@ function generateBoard() {
 
         let back = document.createElement("div");
         back.classList.add("back");
-        back.innerText = "<b>?</b>";
+        back.innerHTML = "<b>?</b>";
 
         card.appendChild(front);
         card.appendChild(back);
