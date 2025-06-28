@@ -7,6 +7,8 @@ body {
 	background-color: #1e8449;
 }
 
+a {text-decoration: none;}
+
 #map {
     flex: 1;
 	width: 100%;
