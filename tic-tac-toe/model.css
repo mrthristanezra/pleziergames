@@ -7,6 +7,8 @@ body {
   background-color: #f4f4f9;
 }
 
+a {text-decoration: none;}
+
 .container {
   text-align: center;
 }
