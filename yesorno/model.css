@@ -2,6 +2,8 @@ Body{
 	background-color: #F9E0CA;
 }
 
+a {text-decoration: none;}
+
 .title {
 	font-family: arial;
 	font-size: 65px;
