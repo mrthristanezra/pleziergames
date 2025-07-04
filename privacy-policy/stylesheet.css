@@ -4,6 +4,8 @@ body{
 	background-color: #eef1ff;
 }
 
+a {text-decoration: none;}
+
 h1{
 	font-size: 45px;
 }
