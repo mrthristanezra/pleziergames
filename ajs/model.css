@@ -1,8 +1,7 @@
 a {text-decoration: none;}
 
-.ajs-title{
-	font-family: times new roman;
-	font-size: 64px;
+body {
+	font-family: 'Comfortaa', sans-serif;
 }
 
 table{
@@ -14,6 +13,7 @@ table{
 	width: 400px;
 	height: 110px;
 	background-color: white;
+	font-family: 'Comfortaa', sans-serif;
 }
 
 h3{
