@@ -1,25 +1,17 @@
 <!DOCTYPE HTML>
 <Html>
 <Head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <Title>PlezierGames</Title>
     <Style>
-		H1{text-align: center;
-		Background-color: White;
-		Border-style: Dotted;
-		Border-width: 10px;
-		Border-top-color: White;
-		Border-right-color: White;
-		Border-bottom-color: White;
-		Border-left-color: White;
+		Body{
+		background-color: #f4f4f4;
+		font-family: 'Comfortaa', sans-serif;
+		margin: 0;
 		}
 		Table{
 		background-color: white;
-		}
-		.paragraph{
-		background-color: white;
-		}
-		Body{
-		background-size:100% auto;
 		}
 		.side-top{
 		background-color: white;
@@ -32,58 +24,98 @@
 		background-color: blue;
 		border: none;
 		color: white;
-		font-family: 'Trebuchet MS', sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		}
-		.socialmedia{
-		margin: auto;
-		width: 250px;
-		height: 70px;
+		.pleziergames{
+		font-size: 47px;
+		font-weight: bold;
+		padding: 0 10px;
+		background: linear-gradient(to bottom right, cyan, blue, purple);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 		}
-		.urldirectbutton{
-		width: 150px;
-		height: 30px;
-		font-size: 16px;
-		Background-color: white;
+		.page-header{
+		width: 100%;
+		line-height: 100px;
+		padding: 10px 0;
+		background: white;
 		}
-	        .box{
-		width: 320px;
+	    .box{
 		margin-top: 50px;
 		background: white;
 		padding: 20px;
 		display: inline-block;
 		border-radius: 10px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 		}
+		.social-container {
+            display: flex;
+            gap: 20px;
+        }
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            color: #333;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+		a {text-decoration: none;}
+        .social-link:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .social-link.x { background-color: #000000; color: white; }
+        .social-link.twitch { background-color: #6441a5; color: white; }
+        .social-link.tumblr { background-color: #35465c; color: white; }
+        .social-link.mastodon { background-color: #6364ff; color: white; }
+		.social-link.roblox { background-color: #1466ff; color: white; }
     </Style>
 	<Script>console.log("Hey there! I'm Mr. Thristan Ezra, welcome to my website!");</Script>
 	<Link rel="icon" type="image/x-icon" href="pleziergamesicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 	
 	</Head>
-<Body image background="background.png">
-<h1><Font face="tahoma"><Marquee>Welcome to PlezierGames!</Marquee></Font></h1>
-<Font face=sans-serif size="5"><Center>by Mr. Thristan Ezra</Font>
+<Body><Center>
+
+<div class="page-header"><span class="pleziergames">PlezierGames</span>Created by Mr. Thristan Ezra</div>
+
 <P><Font size="5"><Table class="side-top">
 <Th><A Href="index.html"><Button class="clickbutton">Home</Button></A></Th>
 <Th><A Href="games.html"><Button class="clickbutton">Games</Button></Th>
-<Th><A Href="socials.html"><Button class="clickbutton">Socials</Button></A></Th>
-</Table></Font></P><Br><Br><Br>
+<Th><A Href="socials.html"><Button class="clickbutton">Social</Button></A></Th>
+</Table></Font></P>
 
+<div class="box">
+<p>Follow me on these social links:</p>
+    <div class="social-container">
+        <a href="https://x.com/mrthristanezra_" class="social-link x" target="_blank" title="X (Twitter)">
+            <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="https://twitch.tv/MrThristanEzra" class="social-link twitch" target="_blank" title="Twitch">
+            <i class="fab fa-twitch"></i>
+        </a>
+        <a href="https://mrthristanezra.tumblr.com" class="social-link tumblr" target="_blank" title="Tumblr">
+            <i class="fab fa-tumblr"></i>
+        </a>
+        <a href="https://mastodon.social/@mrthristanezra" class="social-link mastodon" target="_blank" title="Mastodon">
+            <i class="fab fa-mastodon"></i>
+        </a>
+		<a href="https://www.roblox.com/users/1867265111/profile" class="social-link roblox" target="_blank" title="Roblox">
+            <i class="fab fa-roblox">R</i>
+        </a>
+    </div></div>
 
-<Div Class="box"><Font size=3 face=tahoma>
-<Table class="socialmedia">
-<Tr><Td align=center><Font color='#001f48'>Tumblr</Font></Td>
-<Td align=center width=35px><Img src="tumblr_icon.png" width=30px; height=30px></img></Td>
-<Td align=center><A href="https://tumblr.com/mrthristanezra"><Button class="urldirectbutton">mrthristanezra</Button></A>
-</Td></Tr>
-<Tr><Td align=center><Font color='#cb6ce6'>Twitch</Font></Td>
-<Td align=center width=35px><Img src="twitch_icon.png" width=30px; height=30px></img></Td>
-<Td align=center><A href="https://www.twitch.tv/MrThristanEzra"><Button class="urldirectbutton">MrThristanEzra</Button></A>
-</Td></Tr>
-<Tr><Td align=center>X/Twitter</Td>
-<Td align=center width=35px><Img src="twitter_icon.png" width=30px; height=30px></Td>
-<Td align=center><A Href="https://x.com/mrthristanezra_"><Button class="urldirectbutton">mrthristanezra_</Button></A>
-</Td></Tr>
-</Table></Font></Div>
 <Br><Br><Br><Br><Br><Br><Br><Br>
-<P><Font size=3 face=verdana color="white"> © 2025 Mr. Thristan Ezra | <A href="privacy-policy\" target="_blank">Privacy Policy</A></Font></P></Center>
+<p class="">&copy; 2025 Mr. Thristan Ezra | <a href="privacy-policy\" target="_blank">Privacy Policy</a></p></Center>
 </Body>
 </Html>
