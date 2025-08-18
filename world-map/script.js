@@ -12,10 +12,10 @@ async function getCountryName(lat, lng) {
     try {
         const response = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}&zoom=3&addressdetails=1`);
         const data = await response.json();
-        return data.address && data.address.country ? data.address.country : "Unknown";
+        return data.address && data.address.country ? data.address.country : "⚠️ [Unable to fetch Location]";
     } catch (error) {
         console.error("Error fetching country:", error);
-        return "Unknown";
+        return "⚠️ [Unable to fetch Location]";
     }
 }
 
@@ -54,3 +54,4 @@ map.on('click', async function(e) {
         .setContent(popupContent)
         .openOn(map);
 });
+
