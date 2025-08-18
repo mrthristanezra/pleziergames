@@ -2,7 +2,7 @@ const cells = document.querySelectorAll(".cell");
 const statusText = document.querySelector(".status");
 const resetButton = document.getElementById("reset");
 
-let currentPlayer = "X";
+let currentPlayer = "✖️";
 let gameBoard = ["", "", "", "", "", "", "", "", ""];
 let isGameActive = true;
 
@@ -30,14 +30,14 @@ function checkWinner() {
       gameBoard[a] === gameBoard[c]
     ) {
       isGameActive = false;
-      updateStatus(`Player ${currentPlayer} Wins! 🎉`);
+      updateStatus(`Winner: ${currentPlayer} 🏆`);
       return;
     }
   }
 
   if (!gameBoard.includes("")) {
     isGameActive = false;
-    updateStatus("It's a Draw! 🤝");
+    updateStatus("It's a Draw!");
   }
 }
 
@@ -56,25 +56,25 @@ function handleCellClick(event) {
   checkWinner();
 
   if (isGameActive) {
-    currentPlayer = currentPlayer === "X" ? "O" : "X";
-    updateStatus(`Player ${currentPlayer}'s Turn`);
+    currentPlayer = currentPlayer === "✖️" ? "⭕" : "✖️";
+    updateStatus(`Player: ${currentPlayer}`);
   }
 }
 
 function resetGame() {
   gameBoard = ["", "", "", "", "", "", "", "", ""];
   isGameActive = true;
-  currentPlayer = "X";
+  currentPlayer = "✖️";
 
   cells.forEach((cell) => {
     cell.textContent = "";
     cell.classList.remove("taken");
   });
 
-  updateStatus(`Player ${currentPlayer}'s Turn`);
+  updateStatus(`Player: ${currentPlayer}`);
 }
 
 cells.forEach((cell) => cell.addEventListener("click", handleCellClick));
 resetButton.addEventListener("click", resetGame);
 
-updateStatus(`Player ${currentPlayer}'s Turn`);
+updateStatus(`Player: ${currentPlayer}`);
