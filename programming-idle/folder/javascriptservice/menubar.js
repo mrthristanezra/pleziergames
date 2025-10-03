@@ -62,16 +62,16 @@ function gameLoaded() {
   document.getElementById("MultiplyScriptsPerSec").innerText = multiplied.toLocaleString();
 
   // Workers
-  document.getElementById("JSProgrammers").innerText = programmers;
-  document.getElementById("JavaSecurity").innerText = securities;
-  document.getElementById("AdsPublished").innerText = ads;
-  document.getElementById("Workers").innerText = worker;
-  document.getElementById("Employees").innerText = employee;
-  document.getElementById("Website").innerText = website;
-  document.getElementById("JavaServer").innerText = javaserver;
-  document.getElementById("Mods").innerText = moderator;
-  document.getElementById("Variables").innerText = variables;
-  document.getElementById("HeadQuarters").innerText = headquarters;
+  document.getElementById("JSProgrammers").innerText = programmers.toLocaleString;
+  document.getElementById("JavaSecurity").innerText = securities.toLocaleString;
+  document.getElementById("AdsPublished").innerText = ads.toLocaleString;
+  document.getElementById("Workers").innerText = worker.toLocaleString;
+  document.getElementById("Employees").innerText = employee.toLocaleString;
+  document.getElementById("Website").innerText = website.toLocaleString;
+  document.getElementById("JavaServer").innerText = javaserver.toLocaleString;
+  document.getElementById("Mods").innerText = moderator.toLocaleString;
+  document.getElementById("Variables").innerText = variables.toLocaleString;
+  document.getElementById("HeadQuarters").innerText = headquarters.toLocaleString;
 
   alert("Game progress loaded!");
 }
